@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
  <html> 
 <head>
@@ -63,6 +64,8 @@
 
    <div class="container ">
      <div class="row " >
+
+<!-- add files  -->
 
     <div class="col-sm-6 g-2"  style="background-color: rgba(224, 224, 224, 0.94);">
         <h3 class="fs-5 text-center">ADD Files</h3>
@@ -159,18 +162,20 @@
               <tbody>
                 <tr>
                   <th scope="row" class="table-light"> Full Name </th>
-                  <td> 2024-06-21</td>
+                  <td> <?php echo $_SESSION['fnames'] ; echo " "; echo $_SESSION['lnames'] ; ?></td>
                    
                 </tr>
                 <tr>
                   <th scope="row" class="table-light">Employee ID</th>
-                  <td>Jacob</td>
+                  <td>
+                  <?php echo $_SESSION['empids'] ; ?>
+                  </td>
                   
                 </tr>
                 <tr>
                   <th scope="row" class="table-light">Appointed Date</th>
                   
-                  <td>@twitter</td>
+                  <td> <?php echo $_SESSION['appointdates'] ; ?> </td>
                 </tr>
                 <tr>
                   <th scope="row" class="table-light"> Salary Index</th>
@@ -179,15 +184,11 @@
                 </tr>
                 <tr>
                   <th scope="row" class="table-light"> Date Of Birth </th>
-                  <td>Jacob</td>
+                  <td> <?php echo $_SESSION['dobs'] ; ?></td>
                   
                 </tr>
 
-                <tr>
-                  <th scope="row" class="table-light"> Email</th>
-                  <td>Jacob</td>
-                  
-                </tr>
+                 
 
                 <tr>
                   <th scope="row" class="table-light"> Contact Number</th>
@@ -197,13 +198,17 @@
 
                 <tr>
                   <th scope="row" class="table-light"> NIC</th>
-                  <td>Jacob</td>
+                  <td>
+                  <?php echo $_SESSION['unics'] ; ?>
+                </td>
                   
                 </tr>
 
                  <tr>
                   <th scope="row" class="table-light"> Department</th>
-                  <td>Jacob</td>
+                  <td>
+                  <?php echo $_SESSION['depname'] ; ?>
+                  </td>
                   
                 </tr>
                 </tbody>
