@@ -1,0 +1,638 @@
+body{
+  margin: 0;
+}
+
+.logo-1 {
+  background: url(images/logo.png) 50% / cover no-repeat;
+  width: 137px;
+  height: 100px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+ .zonal-education-office-mulatiyana {
+  margin-top: 20px;
+  margin-left: 10px;
+  overflow-wrap: break-word;
+  font-family: 'Jockey One';
+  font-weight: 400;
+  font-size: 48px;
+  color: #000000;
+  margin-top: 0%;
+
+}
+.zonal-education-office-mulatiyana-sub1 {
+  font-family: 'Jockey One';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.333;
+  margin-top: 10px;
+}
+.LogoContainer {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  
+}
+.ellipse-1 {
+  background: url(ellipse_1.jpeg) 50% / cover no-repeat ;
+  border-radius: 46.5px;
+  width: 93px;
+  height: 93px;
+}
+ .user-login {
+  
+  font-family: 'Jockey One';
+  font-weight: 400;
+  font-size: 32px;
+  color: #FFFCFC;
+  background-color: #266DF7;
+  border-radius: 60px;
+  background: #266DF7;
+  align-items: center;
+  align-content: center;
+  padding: 8px 19.5px 7px 19.5px;
+  width: 200px;
+  height: 50px;
+  margin-top: 45px;
+  margin-right: 10px;
+}
+.container-17 {
+  flex-direction: row;
+  justify-content:space-between;
+  display:flex;
+
+
+}
+.container-11 {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: auto;
+
+}
+.home {
+  margin-left: 10px;
+  display: inline-block;
+  width: 178.9px;
+  overflow-wrap: break-word;
+  font-family: 'Jockey One';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+  background-color:rgba(156, 170, 170, 0.49);
+  border-radius: 60px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+ .notices {
+  width: 178.9px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Jockey One';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+  background-color:rgba(156, 170, 170, 0.49);
+  border-radius: 60px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+.about-us-1 {
+  margin: 5px 0 2px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Jockey One';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+  background-color:rgba(156, 170, 170, 0.49);
+  border-radius: 60px;
+  width: 178.9px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+.contact-us {
+  margin-top: 7px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Jockey One';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+  background-color:rgba(156, 170, 170, 0.49);
+  border-radius: 60px;
+  width: 178.9px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.Navigation {
+  background: rgba(156, 170, 170, 0.49);
+  display:block;
+  flex-direction: row;
+  padding: 10px 0 11px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.group-68 {
+  margin-bottom: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
+  box-sizing: border-box;
+}
+ .logo-2 {
+  background: url(images/logo.png) 50% / cover no-repeat;
+  margin-right: 43px;
+  width: 466px;
+  height: 389px;
+}
+.welcomeDiv{
+  display: block;
+}
+ .welcometo {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 0px;
+}
+.zonal {
+ 
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 64px;
+  color: #000000;
+}
+.container-3 {
+  margin: 0 43px 79px 43px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width:100%;
+  box-sizing: border-box;
+}
+ .about-us {
+  margin: 0 22px 19px 22px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 96px;
+  color: #000000;
+}
+.about {
+  overflow-wrap: break-word;
+  font-family: 'Jockey One';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+.container-19 {
+  border-radius: 50px;
+  background: #A8D7C9;
+  position: relative;
+  margin: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 17.5px 94px 23px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+ .directors-message {
+  margin-bottom: 26px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 96px;
+  color: #000000;
+}
+.message{
+  margin-left: 3px;
+  overflow-wrap: break-word;
+  font-family: 'Jockey One';
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+}
+.container-15 {
+  margin: 13px 32.9px 61px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.manPhoto {
+  background: url(images/worker.jpeg) 50% / cover no-repeat;
+  width: 601px;
+  height: 446px;
+}
+.container-26 {
+  margin: 0 0 133px 43px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+ .latest-notices {
+  margin: 0 43px 158px 43px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 96px;
+  color: #000000;
+}
+ .nd-runners-up-for-inter-province-cricket-tournament {
+  margin-bottom: 60px;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+}
+.march-21 {
+  margin-left: 16px;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+}
+ .container-23 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+  .march-2 {
+  position: absolute;
+  right: 87.3px;
+  bottom: 13px;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+}
+ .container-10 {
+  border-radius: 27px;
+  background: #F1F6B8;
+  position: relative;
+  margin: 2px 136px 0 0;
+  display: flex;
+  padding: 64px 0 13px 10px;
+  width: 340px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+ .best-student-of-the-year-award {
+  margin-bottom: 94px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+}
+  .february-12 {
+  margin-right: 31px;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+}
+  .container-4 {
+  border-radius: 25px;
+  background: #F1F6B8;
+  position: relative;
+  margin: 0 140px 2px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 119px 10.6px 4px 27.6px;
+  box-sizing: border-box;
+}
+ .alms-giving-ceremony-held-anniversary {
+  margin-bottom: 64px;
+  display: inline-block;
+  align-self: flex-start;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+}
+ .january-21 {
+  margin-left: 16px;
+  align-self: center;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+}
+ .container-12 {
+  border-radius: 29px;
+  background: #F1F6B8;
+  position: relative;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  padding: 108px 0 5px 18.9px;
+  width: 340px;
+  box-sizing: border-box;
+}
+ .container-14 {
+  margin: 0 79px 123px 65px;
+  display: flex;
+  flex-direction: row;
+  display:flex;
+  width:max-content;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+ .contact-us-1 {
+  margin: 0 5px 33px 5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Jomhuria';
+  font-weight: 400;
+  font-size: 96px;
+  color: #000000;
+}
+
+ .ellipse-2 {
+  border-radius: 32px;
+  background: url(images/ellipse_2.jpeg) 50% / cover no-repeat;
+  margin-right: 46px;
+  margin-top: 0px;
+  width: 30px;
+  height: 50PX;
+}
+ .container-2 {
+  
+ 
+  overflow-wrap: break-word;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+ .container {
+  margin-bottom: 31px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+  .ellipse-3 {
+  border-radius: 32px;
+  background: url(images/ellipse_3.png) 50% / cover no-repeat;
+  margin-right: 41px;
+  width: 64px;
+  height: 64px;
+}
+ .no-3-main-road-mulatiyana-1 {
+  margin: 12px 0 14px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+ .container-9 {
+  margin-bottom: 31px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+ .ellipse-4 {
+  border-radius: 32px;
+  background: url(images/ellipse_4.png) 50% / cover no-repeat;
+  margin-right: 38px;
+  width: 64px;
+  height: 64px;
+}
+  .muledupt-wp-gov-lk-1 {
+  margin: 6px 0 20px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+ .container-5 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+ .container-21 {
+  margin: 0 152.3px 101px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+ .contact_us_photo {
+  background: url(images/contact.jpeg) 50% / cover no-repeat;
+  width: 631px;
+  height: 484px;
+}
+ .container-2 {
+  margin: 0 79px 57px 65px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+ .phrase_under_div {
+  margin-bottom: 20px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+ .container_contact_us {
+  margin-top: 7px;
+  margin-left: 7px;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+ .footer_text {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  overflow-wrap: break-word;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.ZEO{
+  margin: 0 8px 9px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 266.3px;
+  box-sizing: border-box;
+}
+.zonal-education-office{
+  margin: 6px 0 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+
+}
+
+ .home-notices-about-us-contact-us {
+  margin-top: 6px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.phoneNo{
+  margin: 0 8px 9px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 266.3px;
+  box-sizing: border-box;
+  }
+.image-1{
+  background: url(image_1.png) 50% / cover no-repeat;
+  width: 27px;
+  height: 26px;
+}
+.p_no{
+  margin: 6px 0 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+
+ .container-1 {
+  margin-bottom: 9px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 1189.1px;
+  box-sizing: border-box;
+}
+  .image-2 {
+  background: url(image_2.png) 50% / cover no-repeat;
+  width: 27px;
+  height: 26px;
+}
+ .no-3-main-road-mulatiyana {
+  margin: 6px 0 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+ .container-24 {
+  margin: 0 8px 9px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 266.3px;
+  box-sizing: border-box;
+}
+ .image-3 {
+  background: url(image_3.png) 50% / cover no-repeat;
+  width: 30px;
+  height: 31px;
+}
+  .muledupt-wp-gov-lk {
+  margin: 8px 0 4px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+  .container-18 {
+  margin: 0 5px 39px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 220.8px;
+  box-sizing: border-box;
+}
+ .ellipse-11 {
+  margin: 0 12px 2px 0;
+  width: 21px;
+  height: 17px;
+  background: url(ellipse_11.png) 50% / cover no-repeat;
+}
+  .copyright-2024-data-dreamers {
+  overflow-wrap: break-word;
+  font-family: 'Inria Serif';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  align-items: center;
+}
+ .container-8 {
+  margin-left: 13.4px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: fit-content;
+  box-sizing: border-box;
+}
+  .group-27 {
+  background: #D9D9D9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0 36px 60px;
+  width: auto;
+  box-sizing: border-box;
+  }

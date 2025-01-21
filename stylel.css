@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header {
+    padding: 20px;
+    padding-top: 0px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .right-side .logout {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    position: absolute;
+    right: 100px;
+    top: 10px
+}
+  
+  .left-side {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .left-side img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+  }
+  h1{
+     position: absolute;
+     right: 35px;
+  }
+  .para{
+    font-size: 30px;
+  }
+  .mulatiyana{
+    font-size: 20px;
+  }
+  .right-side ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    padding-left: 40px;
+    position: absolute;
+    top: 130px;
+    left:0;
+    background-color: #ccc;
+    width: 100%;
+  }
+  
+  .right-side li {
+    display: inline-block;
+    padding-left: 50px;
+  }
+  .right-side a {
+    text-decoration: none;
+    color: black;
+  }
+.container {
+    padding: 20px;
+    margin-top: 50px;
+}
+h2{
+  text-align: center; 
+}
+.leave-form {
+    background-color: #e0e0e0;
+    padding:20px 50px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 470px;
+}
+.leave-form input, .leave-form select, .leave-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d8d7d7;
+    border-radius: 20px;
+}
+.leave-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.leave-form button:hover {
+    background-color: #0056b3;
+}
+.leave-count {
+    margin-top: 20px;
+    background-color:#e0e0e0; 
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.leave-count table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.leave-count table th, .leave-count table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 0px;
+}
+.count{
+  text-align: center;
+}
+footer {
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d3d3d3;
+  padding: 20px;
+}
+.footer-left p {
+  margin: 5px 0;
+}
+
+.footer-left i {
+  margin-right: 10px;
+}
+
+.footer-right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 10px;
+}
+
+.footer-right ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-bottom {
+  text-align: right;
+  background-color: #d3d3d3;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  margin: 0
+}

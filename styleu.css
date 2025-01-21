@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+header {
+    padding: 20px;
+    padding-top: 0px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .left-side {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .left-side img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+  }
+  .user {
+    position: absolute;
+    right: 35px;
+  }
+  .user img {
+    position: absolute;
+    right: 122px;
+    top: 0px; 
+  }
+  .user h3{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  .para{
+    font-size: 30px;
+  }
+  .mulatiyana{
+    font-size: 20px;
+  }
+  .right-side ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    padding-left: 40px;
+    position: absolute;
+    top: 130px;
+    left:0;
+    background-color: #ccc;
+    width: 100%;
+  }
+  
+  .right-side li {
+    display: inline-block;
+    padding-left: 50px;
+  }
+  .right-side a {
+    text-decoration: none;
+    color: black;
+  }
+.container {
+    padding: 20px;
+    margin-top: 30px;
+}
+h2{
+  text-align: center; 
+}
+.container {
+    padding: 20px;
+    text-align: center;
+}
+.notice {
+    background-color: #ffffcc;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 90px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100px;
+}
+.notice h2 {
+    color: #003366;
+}
+footer {
+    width: 100%;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d3d3d3;
+    padding: 20px;
+  }
+  .footer-left ul {
+    margin: 5px 0;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-left i {
+    margin-right: 10px;
+  }
+  
+  .footer-right ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-right ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-right ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-bottom {
+    text-align: right;
+    background-color: #d3d3d3;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  
+  .footer-bottom p {
+    margin: 0
+  }
