@@ -1,0 +1,48 @@
+.j {
+    background-color: #ffffff;
+    font-family: 'Jockey One';
+    font-weight: 400;
+    height:100%;
+    
+}
+
+.img1{
+  width:10%;
+  height:auto;
+   
+
+}
+   
+
+ 
+.title {  
+  position:absolute;
+   margin-top:-9%;
+   margin-left:10%;
+   
+  
+}
+
+.ptitle{
+   position:absolute;
+   margin-top:-8%;
+    right: 5%;
+}
+
+.footer{
+    background-color:  rgba(224, 224, 224, 0.94);
+    width: 100%;
+    bottom: 0;
+     
+  }
+  
+  .footernav {
+   position: absolute;
+   right:5%;
+  }
+  
+  .footernav a {
+    text-decoration: none;
+    color: rgb(22, 20, 20);
+  }
+  

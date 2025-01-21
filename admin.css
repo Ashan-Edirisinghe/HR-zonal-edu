@@ -1,0 +1,47 @@
+ 
+   .fb{ background-color:#b8cfe3f2;
+         padding:10px;
+         border-radius:10px ;
+         width:20rem;
+         justify-content: center;
+         display: flex;
+         align-items: center;
+         
+         
+   }
+  .fb input {
+    border-radius: 10px;
+    padding:2px;
+   }
+
+  .fb button{
+    justify-content: center;
+         display: flex;
+         align-items: center;
+         margin-left: 50px;
+         
+  }
+
+    
+    
+
+  #formtitle {
+    
+    font-weight:400;
+  }
+
+  .adf{
+    background-color: #eef0f0f1;;
+  }
+
+  .play{
+     
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+     margin-left: 30%;
+}
+
+ 
+ 
