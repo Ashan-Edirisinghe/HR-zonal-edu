@@ -107,6 +107,19 @@
                     
                   </div>
 
+                  <div class="mb-1">
+                    <label for="addnum" class="form-label">Cotact Number</label>
+                    <input type="text" class="form-control" id="addnum" name="num" >
+                    
+                  </div>
+
+
+                  <div class="mb-1">
+                    <label for="addrole" class="form-label">Profession</label>
+                    <input type="text" class="form-control" id="addrole" name="role" >
+                    
+                  </div>
+
                   
 
                   
@@ -134,6 +147,9 @@
              }
              
              ?>
+
+            
+
         </div>
     
     
@@ -157,7 +173,7 @@
         
         <div class="d-grid p-4 text-center gap-3 "  style="background-color: rgba(224, 224, 224, 0.94); ">
           <div>   
-            <table class="table">
+           <?php if($_SESSION['search']){ ?><table class="table">
                     
               <tbody>
                 <tr>
@@ -177,11 +193,7 @@
                   
                   <td> <?php echo $_SESSION['appointdates'] ; ?> </td>
                 </tr>
-                <tr>
-                  <th scope="row" class="table-light"> Salary Index</th>
-                  <td>Jacob</td>
-                  
-                </tr>
+                 
                 <tr>
                   <th scope="row" class="table-light"> Date Of Birth </th>
                   <td> <?php echo $_SESSION['dobs'] ; ?></td>
@@ -192,7 +204,7 @@
 
                 <tr>
                   <th scope="row" class="table-light"> Contact Number</th>
-                  <td>Jacob</td>
+                  <td> <?php echo $_SESSION['m-nums']  ?> </td>
                   
                 </tr>
 
@@ -209,18 +221,59 @@
                   <td>
                   <?php echo $_SESSION['depname'] ; ?>
                   </td>
-                  
+                  </tr>
+
+                  <tr>
+                  <th scope="row" class="table-light"> Profession</th>
+                  <td>
+                  <?php echo $_SESSION['role'] ; ?>
+                  </td>
                 </tr>
+
+                <tr>
+                  <th scope="row" class="table-light"> Salary Index</th>
+                  <td>
+                  <?php echo $_SESSION['salaryindex'] ; ?>
+                  </td>
+                </tr>
+
+
+
                 </tbody>
                 </table>
+              <?php } ?>
 
                 <div class="d-flex gap-2 mt-1 p-3 justify-content-center align-item-center "> 
-                  <button class="btn btn-success">Update</button>
+                 <form method="post" action="files.php">  <button class="btn btn-success" type="submit" name="update">Update</button> </form>
 
                   <button class="btn btn-danger ms-5"> Delete</button>
-                </div>
 
-            </div>
+                </div>
+              </div>
+
+
+           <!-- update form-->
+           
+        <?php
+        
+        if(isset($_POST['update'])){ 
+        include "backend/update.php";
+        } else{
+
+        }
+      
+      ?>
+
+            
+            
+        
+
+           
+
+            
+              
+              
+         
 
             <div >
               

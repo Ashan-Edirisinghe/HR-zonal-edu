@@ -10,10 +10,11 @@ if(isset($_POST['fileSubmit'])){
     $appointdate = $_POST['appointDate'];
     $udob = $_POST['DOB'];
     $udep = $_POST['uDep'];
-    
+    $unum = $_POST['num'];
+    $urole = $_POST['role'];
     try{ 
 
-    $stm = $conn->query("INSERT INTO empfiles VALUES('$nic','$fullname','$lastname','$uid','$appointdate','$udob',$udep)");
+    $stm = $conn->query("INSERT INTO empfiles VALUES('$nic','$fullname','$lastname','$uid','$appointdate','$udob',$udep,'$unum','$urole')");
     $stm->execute();
 
     
