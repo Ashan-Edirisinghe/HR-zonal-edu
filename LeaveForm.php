@@ -18,7 +18,11 @@
             <ul> 
               <li><a href="UserDashboard.php">Dashboard</a></li>
               <li><a href="LeaveForm.php">Leave form</a></li>
-              <li><a href="#" class="logout">Log Out</a></li>
+              <form action="backend/adminLogout.php" method="POST">
+
+<button class="btn btn-primary " type="submit" name="adminout"> logout</button>
+
+</form>
             </ul>
           </div>
         </div>

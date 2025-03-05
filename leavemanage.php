@@ -52,7 +52,11 @@
               <img >
               </div>
               <div class="navbar-nav ms-auto">  
-              <button class="btn btn-primary "> logout</button>
+              <form action="backend/adminLogout.php" method="POST">
+
+             <button class="btn btn-primary " type="submit" name="adminout"> logout</button>
+
+                  </form>
               </div>
             </div>
           </div>
