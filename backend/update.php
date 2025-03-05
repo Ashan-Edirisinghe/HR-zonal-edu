@@ -44,7 +44,7 @@
   
  
 <?php
- session_start();
+//session_start();
 if(isset($_POST['edit-contact'])){
    
  $empid= $_SESSION['empids'];

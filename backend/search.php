@@ -7,7 +7,7 @@
 if(isset($_POST['fileSearch'])){
      
      $empid = $_POST['searchId'];
-   
+     $_SESSION['search']= true;
 
      $stm = $conn->prepare("SELECT * FROM empfiles WHERE empid = ? ");
      $stm->bindParam(1,$empid);
@@ -48,6 +48,6 @@ if(isset($_POST['fileSearch'])){
 
        header("location: ../files.php");
 }else{
-
+         $_SESSION['serach'] = false;
 }
 ?>

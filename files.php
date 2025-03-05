@@ -55,7 +55,11 @@
               <img >
               </div>
               <div class="navbar-nav ms-auto">  
-              <button class="btn btn-primary "> logout</button>
+              <form action="backend/adminLogout.php" method="POST">
+
+            <button class="btn btn-primary " type="submit" name="adminout"> logout</button>
+
+            </form>
               </div>
             </div>
           </div>
@@ -173,7 +177,7 @@
         
         <div class="d-grid p-4 text-center gap-3 "  style="background-color: rgba(224, 224, 224, 0.94); ">
           <div>   
-           <?php if($_SESSION['search']){ ?><table class="table">
+           <?php if($_SESSION['search'] = true){ ?><table class="table">
                     
               <tbody>
                 <tr>
