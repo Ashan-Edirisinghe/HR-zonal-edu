@@ -1,3 +1,5 @@
+ <?php require 'backend/leavecon.php'?>
+ 
 <!DOCTYPE html>
  <html> 
 <head>
@@ -71,6 +73,9 @@
             <div class="p-3" style="background-color:rgba(224, 224, 224, 0.94);">
                 <h3 class="fs-5 text-center">Requests</h3>
                 
+                             
+  
+      
 
                 <table class="table">
                     
@@ -86,9 +91,9 @@
                         
                       </tr>
                       <tr>
-                        <th scope="row" class="table-success">Employee ID</th>
+                        <th scope="row" class="table-success"> EmpID</th>
                         
-                        <td>@twitter</td>
+                        <td><?php print_r($_SESSION['l_LFID'])   ;?></td>
                       </tr>
                       <tr>
                         <th scope="row" class="table-success">Start Date</th>
@@ -135,7 +140,7 @@
                          </form>
                  
 
-               
+                        
                   
                           
 
@@ -143,9 +148,20 @@
                        <div class="px-4 d-flex gap-1 m-5">
                         <div class="play"> 
 
-                         <button class="btn  btn-sm">  <img src="images/left.png"> </button>
+                        <form action="backend/leavecon.php" method="POST">
+                          
+                        <button class="btn  btn-sm" name="back">  <img src="images/left.png"> </button>
 
-                              <button class="btn   btn-sm ms-5"> <img src="images/right.png"></button>
+                      </form>
+                          
+                      <form action="backend/leavecon.php" method="POST"> 
+                           
+                      <button class="btn   btn-sm ms-5" name="front"> <img src="images/right.png"></button
+                      
+                      </form>
+                      
+                
+                               
                             
 
                        </div>

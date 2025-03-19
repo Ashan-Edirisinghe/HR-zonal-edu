@@ -2,7 +2,7 @@
 <!DOCTYPE html>
  
 <head>
-    <title> login</title>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="admin.css">
@@ -32,7 +32,7 @@
           </div>
           <div>
 
-         <h2 class="ptitle"> Leaves</h2>
+          
          <br>
          
 
@@ -50,14 +50,14 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav me-auto">
-            <a class="nav-link fw-bold "  href="adminDash.php">Home</a>
-              <a class="nav-link fw-bold" href="files.php"> Files</a>
-              <a class="nav-link fw-bold" href="leavemanage.php"> Leaves</a>
-              <a class="nav-link fw-bold" href="Notice.php"> Notices</a>
+            <a class="nav-link fw-bold "  href="UserDashboard.php">Home</a>
+               
+              <a class="nav-link fw-bold" href="LeaveForm.php"> Leave form</a>
+              
               <img >
               </div>
-           //logout button
-              <div class="navbar-nav ms-auto">  
+<!-- logout button -->
+                          <div class="navbar-nav ms-auto">  
                 
                
               </div>
