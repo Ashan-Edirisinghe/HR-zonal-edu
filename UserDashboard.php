@@ -1,84 +1,124 @@
+<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Employee Dashboard</title>
-     <link rel="stylesheet" href="UserDasgboardStyles.css">
-     <link rel="stylesheet" href="userstyle.css">
-
-
-    <link rel="icon" type="image/x-icon" href="Images/logo_1.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One:wght@400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Timmana:wght@400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Capriola:wght@400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="UserDashboardStyles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One:wght@400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+     
+ 
   </head>
   <body>
-    <!--Header Of the page-->
-    <div> 
-     
-          
-          <div class="head"> 
-              <div > <a href="home.html" style="color: #000;">       <img src="images/logo.png" class="img1 " >  </div>
-              <div> <h1 class="title"> Zonal Education Office  <br>  Mulatiyana</h1>  </a></div>
-              <div><h2 class="ptitle"> User Dashboard</h2></div>
-          </div>   
-     
-        </div> 
-  <!--Navigation-->
-  <nav class="navbar navbar-expand-lg " style="background-color: rgba(224, 224, 224, 0.94);">
-    <div class="container-fluid">
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav me-auto">
-          <a class="nav-link fw-bold "  href="UserDashboard.php">Dashboard</a>
     
-          <a class="nav-link fw-bold" href="LeaveForm.php"> Leave form</a>
-      
-          <img >
-          </div>
-          <div class="navbar-nav ms-auto">  
-          <button class="btn btn-primary " > logout</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+     
+    
+
+
+  <?php include 'demo.php'?>
+
+
   <!--States of your leave form-->
-  <div class="leaveFormStatusContainer">
-    Status Of Your Leave Form Submission
-
-  </div>
+   
+ 
 <!--required files-->
-  <div class="ReqFiles">
-  Extra Files
+   
 
-  </div>
+  
 <!--personal details-->
-  <div class="PersonalDetails">
-  Personal Details
+  
+
+
+
+<div class="container">
+
+<div class="row">
+<div class="col-sm-8 g-4"> 
+<div class="adf d-flex gap-2 p-5"> 
+<div class=" me-auto fs-1"> 
+  
+  <?php echo date('Y-m-d'); ?>
+
+</div>
+
+
+<div class=" ms-auto fs-1 ">
+   
+<?php echo $_SESSION['empid']; ?>
+
+</div>
+
+
+ 
+ 
+
+</div> 
+
+ 
+</div>    
+
+<div class="col-sm-4 g-4">
+    <div class="adf d-flex gap-2 p-3"> 
+    <div class="me-2">
+        
+     <button class="btn btn-light "> On Leave</button>
+
+    </div>
+    <div class="me-2">
+        <button class="btn btn-light"> Absent</button>
+    </div>
+
+    
+
+    </div> 
+    <div class="d-grid p-5 gap-2 text-center adf "> 
+       extra Files
+         
+
+    </div>
+
+</div>
+
+
+
+<div class="col-sm-8 g-4">
+<div class="adf d-flex gap-2 p-3"> 
+     status
+    
+</div>
+    
+ </div>
+
+
+ <div class="col-sm-4 g-4">
+<div class="adf d-flex gap-2 p-3"> 
+     personal details
+</div>
+    
+ </div>
+
+
+
+
+ 
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </div>
   <!--Footer satrts here-->

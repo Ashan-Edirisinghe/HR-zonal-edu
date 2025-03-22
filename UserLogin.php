@@ -62,30 +62,36 @@
       </div>
     </div>
   </nav>
+
+
+
   <!--Login Form-->
   <div class="loginContainer">
   <div class="loginDiv">
    
     <p class="loginPhrase">Please Login Using Your Login Details</p>
-    <form action="">
-          <label class="username" for="first">
-                Username
+
+
+
+    <form action="backend/user_log.php" method="POST">
+          <label class="username" for="userID">
+                UserID
           </label><br>
           <input class="usernameBox" type="text" 
                  id="first" 
-                 name="first" 
-                 placeholder="Enter your Username" required><br>
+                 name="userID" 
+                 placeholder="Enter userid" required><br>
 
-          <label class="password" for="password">
+          <label class="password" for="userpsw">
                 Password
           </label><br>
           <input class="passwordBox" type="password"
                  id="password" 
-                 name="password"
+                 name="userpsw"
                  placeholder="Enter your Password" required>
 
            
-                 <button type="submit" name="emplogin" class=" btn btn-primary"  style=" justify-content: center;
+                 <button type="submit" name="userlogin" class=" btn btn-primary"  style=" justify-content: center;
                 align-items: center;
                  margin-top: 20px;
                    margin-left: 40%;">

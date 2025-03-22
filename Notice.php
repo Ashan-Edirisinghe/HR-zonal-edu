@@ -21,7 +21,11 @@
           <li><a href="files.php">Files</a></li>
           <li><a href="leavemanage.php">Leaves</a></li>
           <li><a href="Notice.php">Notice</a></li>
-          <li><a href="#" class="logout">Log Out</a></li>
+          <form action="backend/adminLogout.php" method="POST">
+
+              <button class="btn btn-primary " type="submit" name="adminout"> logout</button>
+
+             </form>
         </ul>
       </div>
     </div>

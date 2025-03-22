@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
  
 <head>
@@ -50,9 +49,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav me-auto">
-            <a class="nav-link fw-bold "  href="adminDash.php">Home</a>
-              <a class="nav-link fw-bold" href="files.php"> Files</a>
-              <a class="nav-link fw-bold" href="leavemanage.php"> Leaves</a>
+            <a class="nav-link fw-bold "  href="UserDashboard.php">Home</a>
+               
+              <a class="nav-link fw-bold" href="LeaveForm.php"> Leaves</a>
               <a class="nav-link fw-bold" href="Notice.php"> Notices</a>
               <img >
               </div>
