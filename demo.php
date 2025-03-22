@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
  
 <head>
-    
+    <title> login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="admin.css">
@@ -32,7 +31,7 @@
           </div>
           <div>
 
-          
+         <h2 class="ptitle"> Leaves</h2>
          <br>
          
 
@@ -52,12 +51,12 @@
             <div class="navbar-nav me-auto">
             <a class="nav-link fw-bold "  href="UserDashboard.php">Home</a>
                
-              <a class="nav-link fw-bold" href="LeaveForm.php"> Leave form</a>
-              
+              <a class="nav-link fw-bold" href="LeaveForm.php"> Leaves</a>
+              <a class="nav-link fw-bold" href="Notice.php"> Notices</a>
               <img >
               </div>
-<!-- logout button -->
-                          <div class="navbar-nav ms-auto">  
+           //logout button
+              <div class="navbar-nav ms-auto">  
                 
                
               </div>
