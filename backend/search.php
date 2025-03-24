@@ -21,7 +21,7 @@ if(isset($_POST['fileSearch'])){
        $_SESSION['appointdates'] = $row['appointdate'];
        $_SESSION['dobs'] = $row['dob'];
        $_SESSION['unics'] = $row['unic'];
-       $_SESSION['dobs'] = $row['dob'];
+       $_SESSION['depname'] = $row['dep'];
        $_SESSION['m-nums'] = $row['m_number'];
        $_SESSION['role'] = $row['profession'];
        

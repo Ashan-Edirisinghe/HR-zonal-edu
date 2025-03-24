@@ -1,4 +1,5 @@
 <?php session_start(); ?>
+ 
 <!DOCTYPE html>
 <html>
 
@@ -101,7 +102,8 @@
 
 
 
-          <?php if ($_SESSION['leavenotice'] === true) { ?>
+          <?php  
+          if ($_SESSION['leavenotice'] === true) { ?>
 
 
             <table class="table">
@@ -224,22 +226,22 @@
               <tbody>
                 <tr>
                   <th scope="row" class="table-light">Appointed Date Date</th>
-                  <td> 2024-06-21</td>
+                  <td> <?php  echo $_SESSION['l_appointdate'];?></td>
 
                 </tr>
                 <tr>
                   <th scope="row" class="table-light">Designation</th>
-                  <td>Jacob</td>
+                  <td> <?php echo $_SESSION['l_profession']?></td>
 
                 </tr>
                 <tr>
-                  <th scope="row" class="table-light">Work Period</th>
+                  <th scope="row" class="table-light">Work Period (years)</th>
 
-                  <td>@twitter</td>
+                  <td> <?php echo $_SESSION['workperiod']?></td>
                 </tr>
                 <tr>
                   <th scope="row" class="table-light"> Department</th>
-                  <td>Jacob</td>
+                  <td><?php echo $_SESSION['l_dep'] ?></td>
 
                 </tr>
               </tbody>

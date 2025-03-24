@@ -2,7 +2,7 @@
 <?php session_start(); ?>
 <?php 
  
-if(isset($_POST['leaveformnotice'])){
+//if(isset($_POST['leaveformnotice'])){
 
    
  
@@ -85,7 +85,7 @@ if (count($list) > 0) {
  
  }
    
-
+  
    
    
   
@@ -96,6 +96,8 @@ if (count($list) > 0) {
    
   header("Location: ../leavemanage.php");
    
+
+
       
   
      
@@ -110,20 +112,7 @@ if (count($list) > 0) {
 }
 
 
-if(isset($_POST['front']) && $_SESSION['index'] < count($list)-1){
-  
-       
-  $_SESSION['index']++;
-
- // $_SESSION['l_LFID'] = $list[$_SESSION['index']]['LFID'];
-
-  sessiondata($list,$_SESSION['index']);
-
-  //echo $list[$index]['LFID'];
-  
-  header("Location: ../leavemanage.php");
-   exit;
-} 
+ 
 
 if(isset($_POST['back']) && $_SESSION['index'] > 0){
 
@@ -154,7 +143,20 @@ echo $index . "<br>";
 print_r (  $list[$index]['LFID'] );
 */
 
+if(isset($_POST['front']) && $_SESSION['index'] < count($list)-1){
+  
+       
+  $_SESSION['index']++;
 
+ // $_SESSION['l_LFID'] = $list[$_SESSION['index']]['LFID'];
+
+  sessiondata($list,$_SESSION['index']);
+
+  //echo $list[$index]['LFID'];
+  
+  header("Location: ../leavemanage.php");
+   exit;
+} 
 
 
 
@@ -182,6 +184,14 @@ exit;
 
 
 
- 
+ /*
+}else{
+  $_SESSION['leavenotice'] = false;
+  header("Location: ../leavemanage.php");
+  
+  exit;
 }
+
+
+ */
 ?>
