@@ -58,33 +58,24 @@
       </nav>
 
 
-       <div class="container gy-2 ">
-        <p id="formtitle"> Login Using Admin Details </p> 
-        <form class=" fb " action="backend/adminLogin.php" method="POST">
-        <div class="row  " >
-           <div class="col-md-3">
-                <div class="mb-3">   
-                 <label for="fname" >Admin ID</label> <br> 
-                <input type="text " id="fname" name="adminId"      required> 
-                </div>
-                <div class="mb-3"> 
-                <label for="lname">Password:</label><br>
-                <input type="password" id="lname" name="adminPsw"     required>
-                </div>  
-
-                <div class="mb-3 "> 
-                <button type="submit" class="btn btn-primary "  name="login"  value="login">Submit</button>
-                </div>
-                 
-
-                </div>
-           </div>
-             
-           </div>
-        </div>
+      <div class="container d-flex justify-content-center align-items-center" style="height: 50vh;">
+    <div class="col-md-4">
+        <h5 id="formtitle" class="mx-5">Login Using Admin Details</h5>
+        <form class="p-3 d-block" action="backend/adminLogin.php" method="POST" style="background-color: rgba(224, 224, 224, 0.94);">
+            <div class="mb-3">
+                <label for="fname" class="form-label">Admin ID</label>
+                <input type="text" id="fname" name="adminId" class="form-control p-1" required>
+            </div>
+            <div class="mb-3">
+                <label for="lname" class="form-label">Password</label>
+                <input type="password" id="lname" name="adminPsw" class="form-control p-1" required>
+            </div>
+            <div class="mb-3 text-center">
+                <button type="submit" class="btn btn-primary mx-auto" name="login" value="login">Submit</button>
+            </div>
         </form>
-
-       </div>
+    </div>
+</div>
 
 
 

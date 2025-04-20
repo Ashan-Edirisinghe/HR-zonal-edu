@@ -1,11 +1,10 @@
-<?php
-session_start();    
-require 'dbcon.php';
-?>
-<?php 
-//if($_SESSION['leavenotice' === true]){
+<?php session_start();    
+ require 'dbcon.php';
+ 
+if(isset($_POST['trigger'])){
+ 
 
-$stm = $conn->query("SELECT appointdate,profession,dep FROM empfiles WHERE empid = '$_SESSION[l_empid]'");
+$stm = $conn->query("SELECT appointdate,profession,dep FROM empfiles WHERE empid = '$_SESSION[ln_empid]'");
 $stm->execute();
 $row = $stm->fetch(PDO::FETCH_ASSOC);
 $appointdate=  $row['appointdate'];
@@ -24,9 +23,8 @@ $stm1 = $conn->prepare("SELECT  name  FROM departments WHERE depid =  ? ") ;
 $stm1->bindParam(1,$row['dep']);
 $stm1->execute();
 $row1 = $stm1->fetch(PDO::FETCH_ASSOC);
- $_SESSION['l_dep'] = $row1['name'];
 
- 
+ $_SESSION['l_dep'] = $row1['name']; 
 $_SESSION['l_appointdate'] = $appointdate;
 $_SESSION['workperiod'] =  (int)$datediff;
  
@@ -39,8 +37,17 @@ $_SESSION['otherlimit'] = 10;
 
  $id = $_SESSION['l_empid'];
  echo $id;
-$stm2 = $conn->prepare("SELECT start ,end FROM leaveform WHERE empid = ?  AND approved = 'approved' AND type = 'other' ") ;
- $stm2->bindParam(1,$id);
+ echo $_SESSION['l_dep'];
+ echo $_SESSION['l_appointdate'];
+ echo $_SESSION['workperiod'];
+ 
+    
+
+ // finding other vacation count
+$stm2 = $conn->prepare("SELECT start ,end FROM leaveform WHERE empid = ?  AND approved = 'approved' AND type = ? ") ;
+  $stm2->bindParam(1,$id);
+  $stm2->bindParam(2,$_SESSION['l_type'] );
+
 $stm2->execute();
 
 $otherlist = array();
@@ -57,6 +64,7 @@ echo "</pre>";
 $othercount = 0;
 
 foreach($otherlist as $ol){
+    $othercount = $othercount +$othercount;
     $start_timestamp = strtotime($ol['start']);
     $end_timestamp = strtotime($ol['end']);
     $othercount = ($end_timestamp - $start_timestamp) / (60 * 60 * 24);
@@ -66,26 +74,24 @@ foreach($otherlist as $ol){
 
 if($othercount === $_SESSION['otherlimit']){
     echo "You have exceeded your other leave limit";
-    exit;
+    $_SESSION['newotherlimit'] = 0;
+    
+     
 }else{
+
     echo "You have not exceeded your other leave limit";
-    exit;
+
+    $_SESSION['newotherlimit'] = $_SESSION['otherlimit'] - $othercount;
+
+    echo  $_SESSION['newotherlimit'] ;
+  
+   
 }
-//$start_timestamp = strtotime($row2['start']);
-//$end_timestamp = strtotime($row2['end']);
-//$othercount = ($end_timestamp - $start_timestamp) / (60 * 60 * 24);
 
-
-
-
-
-/*}else if($_SESSION['leavenotice' === false]){
  
-    echo $_SESSION['l_appointdate'] = " ";
-    echo $_SESSION['workperiod'] = " ";       
-    echo $_SESSION['l_profession'] = " ";
-    echo $_SESSION['l_dep'] = " ";
-    exit;
-} */
-
+ 
+header("Location: ../leavemanage.php");
+exit(); // Stop further script execution
+ 
+}
 ?>

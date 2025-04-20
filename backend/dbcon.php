@@ -23,5 +23,10 @@ catch(PDOException $e){
     echo $e->getMessage();
 }
  
+
+ //attendace
+
+ $stm_aten =  $conn->query(" SELECT empid,end FROM leaveform WHERE approved = 'approved'");
+ $stm_aten->execute();
  
 ?>

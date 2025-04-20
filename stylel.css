@@ -3,9 +3,7 @@
     background-color: #e0e0e0;
     padding:20px 50px;
     border-radius: 5px;
-    max-width: auto;
-    margin: 0 auto;
-    height: auto;
+     
 }
 .leave-form input, .leave-form select, .leave-form textarea {
     width: 100%;
@@ -25,64 +23,7 @@
 .leave-form button:hover {
     background-color: #0056b3;
 }
-.leave-count {
-    margin-top: 20px;
-    background-color:#e0e0e0; 
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 400px;
-    margin: 20px auto;
-}
-.leave-count table {
-    width: 100%;
-    border-collapse: collapse;
-}
-.leave-count table th, .leave-count table td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 0px;
-}
-.count{
-  text-align: center;
-}
-footer {
-  width: 100%;
-}
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  background-color: #d3d3d3;
-  padding: 20px;
-}
-.footer-left p {
-  margin: 5px 0;
-}
-
-.footer-left i {
-  margin-right: 10px;
-}
-
-.footer-right ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-right ul li {
-  margin-bottom: 10px;
-}
-
-.footer-right ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-.footer-bottom {
-  text-align: right;
-  background-color: #d3d3d3;
-  padding: 10px;
-  font-size: 0.9em;
-}
-
-.footer-bottom p {
-  margin: 0
-}
+ 
+    
+    
+ 
