@@ -1,4 +1,10 @@
-<?php session_start(); ?>
+<?php session_start();
+    
+      $_SESSION['leaveformnotice'] = true; 
+ 
+ 
+?>
+ 
 <!DOCTYPE html>
 <html>
 
@@ -13,6 +19,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One:wght@400&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   
 
 </head>
 
@@ -82,14 +91,14 @@
       <div class="col-sm-6 g-2 ">
         <div class="p-3" style="background-color:rgba(224, 224, 224, 0.94);">
           <h3 class="fs-5 text-center">Requests</h3>
-
+<!-- 
           <form id="autoSubmitForm" method="POST" action="backend/leavecon.php">
 
             <button name="leaveformnotice" type="submit"> show</button>
-            <!-- Add any other hidden inputs if needed -->
+             // Add any other hidden inputs if needed  
           </form>
-
-          <script>
+     
+       <script>
             // JavaScript function to submit the form on page load
             function submitForm() {
               if (!formSubmitted) {
@@ -98,10 +107,11 @@
               }
             }
           </script>
+            
+-->
 
-
-
-          <?php if ($_SESSION['leavenotice'] === true) { ?>
+          <?php  
+        //  if ($_SESSION['leavenotice'] === true) { ?>
 
 
             <table class="table">
@@ -109,39 +119,39 @@
               <tbody>
                 <tr>
                   <th scope="row" class="table-success">submitted Date</th>
-                  <td> <?php print_r($_SESSION['l_submitdate']); ?></td>
+                  <td> <?php print_r($_SESSION['l_submitdate'] ?? ''); ?></td>
 
                 </tr>
                 <tr>
                   <th scope="row" class="table-success">Name</th>
-                  <td><?php print_r($_SESSION['l_fname']);
+                  <td><?php print_r($_SESSION['l_fname'] ?? '');
                   echo " ";
-                  print_r($_SESSION['l_lname']); ?></td>
+                  print_r($_SESSION['l_lname'] ?? ''); ?></td>
 
                 </tr>
                 <tr>
                   <th scope="row" class="table-success"> EmpID</th>
 
-                  <td> <?php print_r($_SESSION['l_LFID']); ?> </td>
+                  <td> <?php print_r($_SESSION['l_LFID'] ?? ''); ?> </td>
                 </tr>
                 <tr>
                   <th scope="row" class="table-success">Start Date</th>
-                  <td> <?php print_r($_SESSION['l_start']); ?></td>
+                  <td> <?php print_r($_SESSION['l_start'] ?? ''); ?></td>
 
                 </tr>
                 <tr>
                   <th scope="row" class="table-success">End Date</th>
-                  <td><?php print_r($_SESSION['l_end']); ?></td>
+                  <td><?php print_r($_SESSION['l_end'] ?? ''); ?></td>
 
                 </tr>
                 <tr>
                   <th scope="row" class="table-success">Reason</th>
-                  <td> <?php print_r($_SESSION['l_reason']); ?></td>
+                  <td> <?php print_r($_SESSION['l_reason'] ?? ''); ?></td>
 
                 </tr>
                 <tr>
                   <th scope="row" class="table-success">Type</th>
-                  <td><?php print_r($_SESSION['l_type']); ?></td>
+                  <td><?php print_r($_SESSION['l_type'] ?? ''); ?></td>
 
                 </tr>
               </tbody>
@@ -168,9 +178,12 @@
 
                   <button class="btn btn-danger ms-5" name="reject"> Reject </button>
 
+                  
+  
                 </div>
-
+                 
               </form>
+              
 
             </div>
 
@@ -182,25 +195,25 @@
 
                 <form action="backend/leavecon.php" method="POST">
 
-                  <button class="btn  btn-sm" name="back" type=""> <img src="images/left.png"> </button>
+                  <button class="btn  btn-sm" name="back" type="" id="backbutton"> <img src="images/left.png"> </button>
 
                 </form>
 
                 <form action="backend/leavecon.php" method="POST">
 
-                  <button class="btn  btn-sm" name="front" type=""> <img src="images/right.png"> </button>
+                  <button class="btn  btn-sm" name="front" type="" id="frontbutton" > <img src="images/right.png"> </button>
 
                 </form>
               </div>
 
 
-            <?php } else if ($_SESSION['leavenotice'] === false) { ?>
+            <?php //} else if ($_SESSION['leavenotice'] === false) { ?>
                 <!-- #region -->
 
-                <h1> hi</h1>
+                
 
 
-            <?php } ?>
+            <?php //} ?>
 
           </div>
 
@@ -219,27 +232,29 @@
         <div class="col-sm-6 g-2 ">
           <div class=" p-5 d-grid gap-2 text-center" style="background-color: rgba(224, 224, 224, 0.94)">
 
+          
+ 
             <table class="table">
 
               <tbody>
                 <tr>
                   <th scope="row" class="table-light">Appointed Date Date</th>
-                  <td> 2024-06-21</td>
+                  <td> <?php   print_r($_SESSION['l_appointdate'] ?? '') ;?></td>
 
                 </tr>
                 <tr>
                   <th scope="row" class="table-light">Designation</th>
-                  <td>Jacob</td>
+                  <td> <?php  print_r( $_SESSION['l_profession'] ?? '' ) ;?></td>
 
                 </tr>
                 <tr>
-                  <th scope="row" class="table-light">Work Period</th>
+                  <th scope="row" class="table-light">Work Period (years)</th>
 
-                  <td>@twitter</td>
+                  <td> <?php    print_r($_SESSION['workperiod'] ?? ''  );?></td>
                 </tr>
                 <tr>
                   <th scope="row" class="table-light"> Department</th>
-                  <td>Jacob</td>
+                  <td><?php   print_r($_SESSION['l_dep'] ?? '' ); ?></td>
 
                 </tr>
               </tbody>
@@ -258,34 +273,22 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row">Vacation</th>
-                  <td class="table-danger"> 3</td>
-
-
-                </tr>
-
-                <tr>
-                  <th scope="row">Casual</th>
-                  <td class="table-danger"> 3</td>
-
-
-                </tr>
-
-
-                <tr>
-                  <th scope="row">Other</th>
-                  <td class="table-danger"> 3</td>
+                 
+              <tr>
+                  <th scope="row"> <?php echo $_SESSION['l_type'] ?? 'type'; ?> </th>
+                  <td class="table-danger"> <?php echo $_SESSION['newotherlimit'] ?? '' ; ?></td>
 
 
                 </tr>
               </tbody>
             </table>
+            <form id="triggerButton" method="POST" action="backend/leaveCal.php" style="display:block;">
+                  <button   name="trigger" value="true"  class="btn btn-primary ms-5" >check</button>
+                </form>
 
           </div>
     </div>
-
-
+                   
   </div>
        
       

@@ -17,18 +17,33 @@ if(isset($_POST['userlogin'])){
    if(  verifypsw($row["Password"],$psw)){
 
     $_SESSION['empid'] = $row['EMPID'];
-     header("location: ../UserDashboard.php");
+   //  header("location: ../UserDashboard.php");
    }
 }
-    
+
+     
  
 }
 
+$status = array();
+    while($row_status = $stm_status->fetch(PDO::FETCH_ASSOC)){
+        $status[] = $row_status;
+         
+    }
+    echo count($status);
+    echo "ji";
+    echo "<pre>";
+     print_r($status);
+ 
+        echo "</pre>";
 
 function verifypsw($pass,$newpass){
     if($pass == $newpass){
         return true;
     }
 }
+
+
+ 
  
 ?>

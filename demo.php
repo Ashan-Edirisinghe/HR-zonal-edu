@@ -15,15 +15,13 @@
         
     
 </head>
-<body>  
 
-
-<header> 
+  
     <div class="container-fluid  j  ">
         
         <div class="row"> 
             <div > 
-              <a href="home.html" style="color: #000;">       <img src="images/logo.png " class="img1 " >  
+              <a href="index.php" style="color: #000;">       <img src="images/logo.png " class="img1 " >  
                     </div>
         <div> 
          <h1 class="title"> Zonal Education Office  
@@ -31,7 +29,7 @@
           </div>
           <div>
 
-         <h2 class="ptitle"> Leaves</h2>
+         <h2 class="ptitle"></h2>
          <br>
          
 
@@ -41,6 +39,8 @@
     </div>
     </header> 
 
+
+
     <nav class="navbar navbar-expand-lg " style="background-color: rgba(224, 224, 224, 0.94);">
         <div class="container-fluid">
           
@@ -49,21 +49,28 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav me-auto">
-            <a class="nav-link fw-bold "  href="UserDashboard.php">Home</a>
-               
+              <a class="nav-link fw-bold "  href="UserDashboard.php">Home</a>
+              
               <a class="nav-link fw-bold" href="LeaveForm.php"> Leaves</a>
-              <a class="nav-link fw-bold" href="Notice.php"> Notices</a>
+              <a class="nav-link fw-bold" href="noticepage.php"> Notices</a>
               <img >
               </div>
-           //logout button
               <div class="navbar-nav ms-auto">  
-                
-               
-              </div>
+              <form action="backend/user_logout.php" method="POST">
 
+              <button class="btn btn-primary " type="submit" name="userout"> logout</button>
+
+              </form>
+              </div>
             </div>
           </div>
         </div>
       </nav>
-        </body>
-      </html>
+  
+       
+            
+           
+
+ 
+  </body>
+  </html>

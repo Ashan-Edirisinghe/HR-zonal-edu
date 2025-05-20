@@ -1,5 +1,5 @@
  
-<?php session_start(); ?>
+<?php session_start();?>
 
 <!DOCTYPE html>
  <html> 
@@ -96,28 +96,38 @@
     <div class="col-sm-4 g-4">
         <div class="adf d-flex gap-2 p-3"> 
         <div class="me-2">
-            
-         <button class="btn btn-light "> On Leave</button>
+            <form method="post" action="backend/attendanceCon.php">
+            <button class="btn btn-light " name="checkonleave"> On Leave</button>
+            </form>
+       
 
         </div>
-        <div class="me-2">
-            <button class="btn btn-light"> Absent</button>
-        </div>
+        
 
         
 
         </div> 
         <div class="d-grid p-5 gap-2 text-center adf "> 
-            <h6> absent</h6>
-            name <br>
-            name <br>
-             
+           
+    <?php    if (isset($_SESSION['onleave'])) {
 
+    $onleave = $_SESSION['onleave'];
+
+    echo "<h6>Employees on Leave:</h6>";
+    echo "<ul type='none'>";
+    foreach ($onleave as $empid) {
+        echo "<li>Employee ID: $empid</li>";
+    }
+    echo "</ul>";
+       } else {
+    echo "No employees on leave.";
+   }
+?>
         </div>
 
     </div>
-    <div class="col-sm-8 g-4">
-        <div class="adf"> Graph</div>  </div>
+    <div class="col-sm-8 g-4 ">
+         <?php include 'testcal.php';?></div>  
     
     </div>
 </div>

@@ -1,3 +1,4 @@
+<?php include 'demo.php'; ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,6 +8,7 @@
     <title>Zonal Education Office Mulatiyana</title>
     <link rel="stylesheet" href="UserDashboardStyles.css">
     <link rel="stylesheet" href="userstyle.css">
+    <link rel="stylesheet" href="headfoot.css">
     <link rel="icon" type="image/x-icon" href="Images/logo_1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,41 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <!--Header Of the page-->
-    <div> 
-     
-          
-          <div class="head"> 
-              <div > <a href="home.html" style="color: #000;">       <img src="images/logo.png" class="img1 " >  </div>
-              <div> <h1 class="title"> Zonal Education Office  <br>  Mulatiyana</h1>  </a></div>
-              <div><h2 class="ptitle"> </h2></div>
-          </div>   
-     
-        </div> 
-  <!--Navigation-->
-  <nav class="navbar navbar-expand-lg " style="background-color: rgba(224, 224, 224, 0.94);">
-    <div class="container-fluid">
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav me-auto">
-          <a class="nav-link fw-bold "  href="index.html">Home</a>
-          <a class="nav-link fw-bold" href="noticepage.php"> Notices</a>
-          <a class="nav-link fw-bold" href=""> About Us</a>
-          <a class="nav-link fw-bold"> Contact Us</a>
-          <img >
-          </div>
-          <div class="navbar-nav ms-auto">  
-        <a href="UserLogin.php">   <button class="btn btn-primary " > login</button> </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-
+   
   <div class="container-3">
     <div class="logo-2">
     </div >
@@ -168,21 +136,20 @@
 
 
 
-  <div>
+  <div class="container-fluid ">
     <div class="row">
       <div class="col gy-5 ">
-        <div class="footer">
+        <div class="footer p-5 fw-bold">
             
-          <div ></div>
+          <div class=""></div>
           <div> Zonal Education Office <br> Mulatiyana</div>  <br>
 
 
-          <div class="footernav">
-            <a href="home.html">  Home </a> <br>
-           <a href="">  Notices </a> <br>
-           <a href=" ">  About Us </a> <br>
-            <a href="">  Contact Us </a>
-                  
+          <div class="footernav"> <a href="adminDash.php">  Home </a> <br>
+          <a href="files.php">  Files </a> <br>
+          <a href="leavemanage.php">  Leaves </a> <br>
+          <a href="Notice.php">  Notice </a>
+
         
         
         </div>
@@ -212,6 +179,7 @@
     </div>
 
   </div>
+
 
 </body>
 </html>
