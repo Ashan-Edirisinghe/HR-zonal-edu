@@ -1,6 +1,7 @@
 <?php 
 session_start();
 require 'dbcon.php';
+
 if( isset($_POST['checkonleave'])){
 $onleave =  array();
 $today = date('Y-m-d');

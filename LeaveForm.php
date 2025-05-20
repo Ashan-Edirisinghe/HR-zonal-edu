@@ -91,11 +91,11 @@
               <div> Zonal Education Office <br> Mulatiyana</div>  <br>
 
 
-              <div class="footernav"> <a href="adminDash.php">  Home </a> <br>
-              <a href="files.php">  Files </a> <br>
-              <a href="leavemanage.php">  Leaves </a> <br>
-              <a href="Notice.php">  Notice </a>
-
+              <div class="footernav"> <a href="UserDashboard.php">  Home </a> <br>
+               
+               <a href="LeaveForm.php">  Leaves </a> <br>
+               <a href="noticepage.php">  Notice </a>
+ 
             
             
             </div>

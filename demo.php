@@ -21,7 +21,7 @@
         
         <div class="row"> 
             <div > 
-              <a href="home.html" style="color: #000;">       <img src="images/logo.png " class="img1 " >  
+              <a href="index.php" style="color: #000;">       <img src="images/logo.png " class="img1 " >  
                     </div>
         <div> 
          <h1 class="title"> Zonal Education Office  
@@ -29,7 +29,7 @@
           </div>
           <div>
 
-         <h2 class="ptitle"> Admin Login</h2>
+         <h2 class="ptitle"></h2>
          <br>
          
 
