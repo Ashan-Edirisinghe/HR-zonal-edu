@@ -1,4 +1,3 @@
-<?php include 'demo.php'; ?>
 <!doctype html>
 <html lang="en">
   <head>
