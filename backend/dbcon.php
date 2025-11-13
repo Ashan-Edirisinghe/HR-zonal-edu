@@ -31,7 +31,7 @@ catch(PDOException $e){
 
  // Only execute this query if the user is logged in and empid session exists
  if(isset($_SESSION['empid'])) {
-     $stm_status = $conn->query("SELECT start,end,reason FROM leaveform WHERE available = 'check' AND empid =".$_SESSION['empid']." ");
+     $stm_status = $conn->query("SELECT start,end,reason FROM leaveform WHERE available = 'check' AND empid ='".$_SESSION['empid']."' ");
      $stm_status->execute();
  }
 ?>

@@ -32,6 +32,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
+
+
    
   <div class="container-3">
     <div class="logo-2">
@@ -40,8 +42,29 @@
         <P class="welcometo">Welcome to </P>
         <p class="zonal">Zonal Education Office</p>
         <p class="welcometo">Mulatiyana</P>
-    </div>      
+    </div>   
   </div>
+
+<!-- menu bar-->
+    <nav class="navbar navbar-expand-lg " style="background-color: rgba(224, 224, 224, 0.94);">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link fw-bold "  href="index.php">Home</a>
+              <a class="nav-link" href="#"></a>
+              <a class="nav-link" href="#"></a>
+              <a class="nav-link "></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
   <div class="container-19">
     <div class="about-us">
     About Us

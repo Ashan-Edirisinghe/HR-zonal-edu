@@ -51,7 +51,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav me-auto">
-          <a class="nav-link fw-bold "  href="index.html">Home</a>
+          <a class="nav-link fw-bold "  href="index.php">Home</a>
           
           <img >
           </div>
